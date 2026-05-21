@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link:hover, .nav-link.active {
     color: var(--primary-color) !important;
 }
+/* Container Width Adjustment */
+.container {
+    max-width: 1140px !important;
+}
 
 .cart-badge {
     background-color: var(--primary-color);
@@ -49,9 +53,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--hero-bg-color);
 }
 
-.hero-row {
-    min-height: 80vh;
-}
+
 
 .hero-subtitle {
     letter-spacing: 2px;
@@ -69,8 +71,32 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.8;
 }
 
-.hero-image {
+/* --- Hero Section Styles Updated --- */
+.hero-section {
+    min-height: 80vh;
+    overflow: hidden;
+    background-color: var(--hero-bg-color);
+}
+
+.hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 80vh;
-    object-fit: cover;
+    height: 100%;
+    background-size: cover;
+    background-position: center; /* පින්තූරයේ මැද කොටස පෙන්වන්න */
+    background-repeat: no-repeat;
+    opacity: 0.9; /* අවශ්‍ය නම් පින්තූරය ටිකක් අඳුරු කරන්න පුළුවන් */
+}
+
+/* Make title font a bit larger on very big screens */
+.hero-title {
+    font-size: 3.5rem;
+}
+
+@media (min-width: 992px) {
+    .hero-title {
+        font-size: 4.5rem;
+    }
 }
