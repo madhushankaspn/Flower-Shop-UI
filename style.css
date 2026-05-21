@@ -39,7 +39,7 @@ ul {
     margin: 0 auto;
 }
 
-/* Custom Button */
+
 .custom-btn-primary {
     display: inline-block;
     background-color: #ff5b5b;
@@ -362,22 +362,15 @@ ul {
 
 /* --- Testimonial Section --- */
 .testimonial-section {
-    background-color: #f4f4f0;
-    min-height: 350px;
+    /* මෙතන 'testimonial-bg.jpg' වෙනුවට ඔයාගේ background image එකේ නම දෙන්න */
+    background-image: url('images/testimonial-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
     position: relative;
     overflow: hidden;
 }
-
-.testi-deco-img {
-    width: 180px;
-    opacity: 0.7;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.left-deco { left: -60px; }
-.right-deco { right: -60px; }
 
 .text-content {
     position: relative;
@@ -387,7 +380,7 @@ ul {
 .testimonial-quote {
     font-size: 1.3rem;
     font-style: italic;
-    color: #555;
+    color: #333;
     line-height: 1.8;
     margin-bottom: 1.5rem;
 }
@@ -405,6 +398,8 @@ ul {
     font-weight: 700;
     color: #222;
     margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 
 
