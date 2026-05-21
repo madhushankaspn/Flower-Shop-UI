@@ -16,11 +16,9 @@
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Petal & Stem Logo" class="nav-logo">
             </a>
-            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto custom-nav-links">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
@@ -29,7 +27,6 @@
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
-                
                 <div class="d-flex align-items-center custom-nav-icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="far fa-user"></i></a>
@@ -42,28 +39,29 @@
         </div>
     </nav>
 
-  <section class="hero-section d-flex align-items-center">
-        <div class="hero-bg-image" style="background-image: url('images/hero-flower.png');"></div>
+    <section class="hero-section d-flex align-items-center position-relative overflow-hidden" style="min-height: 80vh;">
         
-        <div class="container position-relative">
+        <img src="images/hero-flower.png" alt="Hero Background" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; object-position: right center; z-index: 0;">
+        
+        <div class="container position-relative" style="z-index: 2;">
             <div class="row">
-                <div class="col-md-6 col-lg-5 hero-content">
-                    <p class="hero-subtitle">Exclusive Collection</p>
-                    <h1 class="hero-title">HAPPY MOTHER'S DAY!</h1>
-                    <p class="hero-text">Bring joy to your mom with fresh flowers.</p>
+                <div class="col-md-7 col-lg-6 text-start py-5">
+                    <p class="hero-subtitle mb-3">EXCLUSIVE COLLECTION</p>
+                    <h1 class="hero-title mb-4" style="font-size: 4rem; color: #222;">HAPPY MOTHER'S<br>DAY!</h1>
+                    <p class="hero-text text-muted mb-5 fs-5">Bring joy to your mom with fresh flowers.</p>
                     <a href="#" class="custom-btn-primary">Shop Collection</a>
                 </div>
             </div>
         </div>
 
-        <button class="position-absolute top-50 start-0 translate-middle-y btn ms-2 ms-md-4" style="z-index: 3; color: #333;"><i class="fas fa-chevron-left fs-3"></i></button>
-        <button class="position-absolute top-50 end-0 translate-middle-y btn me-2 me-md-4" style="z-index: 3; color: #333;"><i class="fas fa-chevron-right fs-3"></i></button>
-    </section> 
+        <button class="position-absolute top-50 start-0 translate-middle-y btn ms-2 ms-md-4 z-3" style="color: #222;"><i class="fas fa-chevron-left fs-3"></i></button>
+        <button class="position-absolute top-50 end-0 translate-middle-y btn me-2 me-md-4 z-3" style="color: #222;"><i class="fas fa-chevron-right fs-3"></i></button>
+    </section>
+
 
     <section class="features-section">
         <div class="container">
             <div class="row g-4">
-                
                 <div class="col-6 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
                     <div class="feature-icon feature-orange"><i class="fas fa-truck"></i></div>
                     <div class="feature-text">
@@ -71,7 +69,6 @@
                         <small>For orders over $50</small>
                     </div>
                 </div>
-
                 <div class="col-6 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
                     <div class="feature-icon feature-teal"><i class="fas fa-undo"></i></div>
                     <div class="feature-text">
@@ -79,7 +76,6 @@
                         <small>7 days return</small>
                     </div>
                 </div>
-
                 <div class="col-6 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
                     <div class="feature-icon feature-purple"><i class="fas fa-headset"></i></div>
                     <div class="feature-text">
@@ -87,7 +83,6 @@
                         <small>Always here for you</small>
                     </div>
                 </div>
-
                 <div class="col-6 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
                     <div class="feature-icon feature-green"><i class="fas fa-shield-alt"></i></div>
                     <div class="feature-text">
@@ -95,7 +90,6 @@
                         <small>100% secure checkout</small>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -106,9 +100,7 @@
                 <h2>New Products</h2>
                 <p>A selection of hand-picked seasonal flowers that bring life and color to any space.</p>
             </div>
-
             <div class="row g-4">
-                
                 <div class="col-sm-6 col-lg-3">
                     <div class="custom-card">
                         <div class="card-badge bg-red">Sale</div>
@@ -122,7 +114,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-sm-6 col-lg-3">
                     <div class="custom-card">
                         <img src="images/2.jpg" class="card-image" alt="White Roses">
@@ -135,7 +126,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-sm-6 col-lg-3">
                     <div class="custom-card">
                         <div class="card-badge bg-black">New</div>
@@ -149,7 +139,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-sm-6 col-lg-3">
                     <div class="custom-card">
                         <img src="images/4.jpg" class="card-image" alt="Purple Tulips">
@@ -162,7 +151,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -194,13 +182,11 @@
                 <h2>Featured Items</h2>
                 <p>A perfect arrangement of lovely seasonal flowers. Show your affection with these blooms.</p>
             </div>
-
             <div class="d-flex justify-content-center category-tabs">
                 <a href="#" class="active-tab">ALL</a>
                 <a href="#">BOUQUET</a>
                 <a href="#">PREMIUM</a>
             </div>
-
             <div class="row g-4">
                 <div class="col-sm-6 col-lg-3">
                     <div class="custom-card">
@@ -292,9 +278,10 @@
         </div>
     </section>
 
-  <section class="testimonial-section d-flex align-items-center position-relative">
-        
-        <div class="container text-center text-content">
+    <section class="testimonial-section d-flex align-items-center position-relative overflow-hidden" style="min-height: 400px;">
+        <img src="images/13.jpg" alt="Testimonial Background" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: 0;">
+
+        <div class="container text-center text-content position-relative" style="z-index: 2;">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <p class="testimonial-quote">
@@ -310,8 +297,8 @@
 
         <button class="position-absolute top-50 start-0 translate-middle-y btn ms-2 ms-md-5 z-3"><i class="fas fa-chevron-left fs-3"></i></button>
         <button class="position-absolute top-50 end-0 translate-middle-y btn me-2 me-md-5 z-3"><i class="fas fa-chevron-right fs-3"></i></button>
-
     </section>
+
     <section class="experts-section">
         <div class="container">
             <div class="section-heading text-center">
@@ -321,22 +308,22 @@
             
             <div class="row text-center g-4">
                 <div class="col-6 col-md-3">
-                    <img src="images/avatar.jpg" alt="Expert" class="expert-img">
+                    <img src="images/20.jpeg" alt="Expert" class="expert-img">
                     <h5 class="expert-name">Anna Brown</h5>
                     <p class="expert-title">Manager</p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="images/avatar.jpg" alt="Expert" class="expert-img">
+                    <img src="images/21.jpeg" alt="Expert" class="expert-img">
                     <h5 class="expert-name">Sarah Connor</h5>
                     <p class="expert-title">Florist</p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="images/avatar.jpg" alt="Expert" class="expert-img">
+                    <img src="images/22.jpeg" alt="Expert" class="expert-img">
                     <h5 class="expert-name">Lily Smith</h5>
                     <p class="expert-title">Florist</p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="images/avatar.jpg" alt="Expert" class="expert-img">
+                    <img src="images/23.jpeg" alt="Expert" class="expert-img">
                     <h5 class="expert-name">Amanda Clark</h5>
                     <p class="expert-title">Florist</p>
                 </div>
@@ -344,46 +331,64 @@
         </div>
     </section>
 
-    <section class="blog-section">
+    <section class="blog-section py-5 bg-white">
         <div class="container">
-            <div class="section-heading text-center">
+            <div class="section-heading text-center mb-5">
                 <h2>From Our Blog</h2>
-                <p>A perfect arrangement of lovely seasonal flowers. Show your affection with these blooms.</p>
+                <p class="text-muted mx-auto" style="max-width: 600px;">A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.</p>
             </div>
             
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="blog-card">
-                        <img src="images/1.jpg" alt="Blog Image" class="blog-img">
-                        <div class="blog-content">
-                            <h5 class="blog-title">Flower Beauty</h5>
-                            <p class="blog-meta">By Admin | Dec 15, 2023</p>
-                            <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet...</p>
-                            <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    <div class="border-0 bg-transparent">
+                        <img src="images/1.jpg" alt="Blog Image" class="w-100 mb-3" style="height: 250px; object-fit: cover;">
+                        <h5 class="fw-bold mb-2">Flower Beauty</h5>
+                        <p class="text-muted small mb-3">By <span class="text-danger">Shopify Team HasTheme</span> / August 12, 2022</p>
+                        <p class="text-muted mb-4" style="font-size: 0.95rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</p>
+                        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                            <a href="#" class="text-muted text-decoration-underline small fw-bold">Continue Reading</a>
+                            <span class="text-muted small"><i class="far fa-comment"></i> 0</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="blog-card">
-                        <img src="images/2.jpg" alt="Blog Image" class="blog-img">
-                        <div class="blog-content">
-                            <h5 class="blog-title">Love Dreams</h5>
-                            <p class="blog-meta">By Admin | Nov 28, 2023</p>
-                            <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet...</p>
-                            <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    <div class="border-0 bg-transparent">
+                        <img src="images/2.jpg" alt="Blog Image" class="w-100 mb-3" style="height: 250px; object-fit: cover;">
+                        <h5 class="fw-bold mb-2">Local Florists</h5>
+                        <p class="text-muted small mb-3">By <span class="text-danger">Shopify Team HasTheme</span> / August 12, 2022</p>
+                        <p class="text-muted mb-4" style="font-size: 0.95rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</p>
+                        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                            <a href="#" class="text-muted text-decoration-underline small fw-bold">Continue Reading</a>
+                            <span class="text-muted small"><i class="far fa-comment"></i> 0</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="blog-card">
-                        <img src="images/3.jpg" alt="Blog Image" class="blog-img">
-                        <div class="blog-content">
-                            <h5 class="blog-title">Sweet Heart</h5>
-                            <p class="blog-meta">By Admin | Oct 10, 2023</p>
-                            <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet...</p>
-                            <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    <div class="border-0 bg-transparent">
+                        <img src="images/3.jpg" alt="Blog Image" class="w-100 mb-3" style="height: 250px; object-fit: cover;">
+                        <h5 class="fw-bold mb-2">Flower Power</h5>
+                        <p class="text-muted small mb-3">By <span class="text-danger">Shopify Team HasTheme</span> / August 12, 2022</p>
+                        <p class="text-muted mb-4" style="font-size: 0.95rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</p>
+                        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                            <a href="#" class="text-muted text-decoration-underline small fw-bold">Continue Reading</a>
+                            <span class="text-muted small"><i class="far fa-comment"></i> 0</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section py-5 mb-5">
+        <div class="container text-center">
+            <h2 class="display-6 fw-bold mb-5" style="font-family: 'Playfair Display', serif;">Join The Colorful Bunch!</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <form class="d-flex align-items-center border-bottom pb-2">
+                        <i class="far fa-envelope text-muted me-2 fs-5"></i>
+                        <input type="email" class="form-control border-0 shadow-none bg-transparent px-2" placeholder="Your email address" style="outline: none;">
+                        <button class="btn fw-bold text-muted p-0 ms-3" type="button" style="font-size: 0.85rem; letter-spacing: 1px;">SUBSCRIBE</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -426,9 +431,20 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="footer-bottom mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-3 mb-md-0" style="color: #888; font-size: 0.9rem;">&copy; 2026 Petal & Stem. All Rights Reserved.</p>
+                <div class="payment-icons">
+                    <img src="images/visa.png" alt="Visa">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/paypal.png" alt="PayPal">
+                    <img src="images/skrill.png" alt="Skrill">
+                    <img src="images/maestro.png" alt="Maestro">
+                </div>
+            </div>
         </div>
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

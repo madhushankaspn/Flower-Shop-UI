@@ -1,4 +1,4 @@
-
+/* Base Styles */
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -23,7 +23,6 @@ ul {
     margin: 0;
 }
 
-
 .section-heading {
     margin-bottom: 3rem;
 }
@@ -39,7 +38,7 @@ ul {
     margin: 0 auto;
 }
 
-
+/* Custom Button */
 .custom-btn-primary {
     display: inline-block;
     background-color: #ff5b5b;
@@ -56,7 +55,7 @@ ul {
     transform: translateY(-2px);
 }
 
-
+/* --- Header / Navbar Styles --- */
 .custom-navbar {
     background-color: #ffffff;
     padding: 1rem 0;
@@ -108,60 +107,26 @@ ul {
     border-radius: 50%;
 }
 
-
-.hero-section {
-    position: relative;
-    min-height: 85vh;
-    background-color: #f8f9fa;
-    overflow: hidden;
-}
-
-.hero-bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    padding-left: 2rem;
-}
-
+/* --- Hero Section Styles --- */
 .hero-subtitle {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
     color: #6c757d;
-    margin-bottom: 0.5rem;
 }
 
 .hero-title {
-    font-size: 3.5rem;
     font-weight: 700;
-    color: #222;
-    margin-bottom: 1rem;
 }
 
 @media (min-width: 992px) {
     .hero-title { font-size: 4.5rem; }
 }
 
-.hero-text {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 2rem;
-}
-
-
+/* --- Features Section Styles --- */
 .features-section {
     background-color: #ffffff;
-    padding: 2.5rem 0;
+    padding: 4.5rem 0;
     border-bottom: 1px solid #eeeeee;
 }
 
@@ -197,7 +162,7 @@ ul {
     color: #777;
 }
 
-
+/* --- Products Section Styles --- */
 .products-section {
     padding: 5rem 0;
     background-color: #fdfdfd;
@@ -276,7 +241,6 @@ ul {
     color: #333;
 }
 
-
 .category-tabs {
     gap: 2rem;
     margin-bottom: 3rem;
@@ -300,7 +264,7 @@ ul {
     border-bottom: 2px solid #ff5b5b;
 }
 
-/* --- Promo Banner --- */
+/* --- Promo Banner Section --- */
 .promo-section {
     padding: 4rem 0;
     background-color: #ffffff;
@@ -361,22 +325,6 @@ ul {
 }
 
 /* --- Testimonial Section --- */
-.testimonial-section {
-    /* මෙතන 'testimonial-bg.jpg' වෙනුවට ඔයාගේ background image එකේ නම දෙන්න */
-    background-image: url('images/testimonial-bg.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 400px;
-    position: relative;
-    overflow: hidden;
-}
-
-.text-content {
-    position: relative;
-    z-index: 2;
-}
-
 .testimonial-quote {
     font-size: 1.3rem;
     font-style: italic;
@@ -402,7 +350,7 @@ ul {
     letter-spacing: 1px;
 }
 
-
+/* --- Experts Section --- */
 .experts-section {
     padding: 5rem 0;
     background-color: #ffffff;
@@ -433,65 +381,9 @@ ul {
     font-size: 0.95rem;
 }
 
-/* --- Blog Section --- */
-.blog-section {
-    padding: 5rem 0;
-    background-color: #fdfdfd;
-    border-top: 1px solid #eeeeee;
-}
-
-.blog-card {
-    background: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-
-.blog-card:hover {
-    transform: translateY(-5px);
-}
-
-.blog-img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-
-.blog-content {
-    padding: 1.5rem;
-}
-
-.blog-title {
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #222;
-}
-
-.blog-meta {
-    font-size: 0.85rem;
-    color: #ff5b5b;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.blog-desc {
-    color: #666;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-}
-
-.blog-link {
-    color: #333;
-    font-weight: 700;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-}
-
-.blog-link:hover {
-    color: #ff5b5b;
+/* --- Newsletter Section --- */
+.newsletter-section input::placeholder {
+    color: #adb5bd;
 }
 
 /* --- Footer Section --- */
@@ -504,7 +396,7 @@ ul {
 .footer-logo {
     height: 50px;
     margin-bottom: 1.5rem;
-    filter: brightness(0) invert(1); 
+    /* ලෝගෝ එක original පාටින් පෙන්නන්න filter එක අයින් කළා */
 }
 
 .footer-text {
@@ -549,4 +441,17 @@ ul {
 
 .footer-links a:hover {
     color: #ff5b5b;
+}
+/* --- Footer Bottom & Payment Icons --- */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* යන්තම් පේන ලා ඉරක් */
+}
+
+.payment-icons img {
+    height: 30px; /* කාඩ් එකේ උස */
+    background-color: #ffffff; /* සුදු පාට කොටුව */
+    padding: 4px 6px;
+    border-radius: 4px; /* කොන් රවුම් කිරීම */
+    margin-left: 8px; /* කාඩ් අතර පරතරය */
+    object-fit: contain;
 }
