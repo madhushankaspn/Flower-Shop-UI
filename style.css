@@ -147,3 +147,22 @@ h1, h2, h3, h4, h5, h6 {
 .promo-banner ul li i {
     width: 25px; /* අයිකන් සේරම එකම පළලකට ගන්න (align කරන්න) */
 }
+
+
+/* --- Featured Items Tabs --- */
+.category-tabs a {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.category-tabs a:hover {
+    color: #ff5b5b !important;
+}
+
+/* දැනට තෝරලා තියෙන tab එක (ALL) යටින් ඉරක් අඳින්න */
+.active-tab {
+    color: #ff5b5b;
+    border-bottom: 2px solid #ff5b5b;
+    padding-bottom: 3px;
+}
