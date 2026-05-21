@@ -1,9 +1,3 @@
-/* CSS Variables (Colors) */
-:root {
-    --primary-color: #ff5b5b; 
-    --hero-bg-color: #f7f9fa;
-}
-
 /* Base Styles */
 body {
     font-family: 'Lato', sans-serif;
@@ -13,6 +7,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
+}
+
+.container {
+    max-width: 1140px !important;
 }
 
 /* --- Header & Navbar Styles --- */
@@ -35,47 +33,22 @@ h1, h2, h3, h4, h5, h6 {
     transition: color 0.3s ease;
 }
 
+/* Hover කරද්දී කෙලින්ම පාට දුන්නා */
 .nav-link:hover, .nav-link.active {
-    color: var(--primary-color) !important;
-}
-/* Container Width Adjustment */
-.container {
-    max-width: 1140px !important;
+    color: #ff5b5b !important; 
 }
 
+/* Cart Badge එකට කෙලින්ම පාට දුන්නා */
 .cart-badge {
-    background-color: var(--primary-color);
+    background-color: #ff5b5b;
     font-size: 0.6rem;
 }
 
 /* --- Hero Section Styles --- */
 .hero-section {
-    background-color: var(--hero-bg-color);
-}
-
-
-
-.hero-subtitle {
-    letter-spacing: 2px;
-    color: #6c757d;
-}
-
-.btn-primary-custom {
-    background-color: var(--primary-color);
-    color: white;
-    transition: opacity 0.3s ease;
-}
-
-.btn-primary-custom:hover {
-    color: white;
-    opacity: 0.8;
-}
-
-/* --- Hero Section Styles Updated --- */
-.hero-section {
     min-height: 80vh;
     overflow: hidden;
-    background-color: var(--hero-bg-color);
+    background-color: #f7f9fa; /* ලා අළු පාට පසුබිම */
 }
 
 .hero-bg-image {
@@ -85,12 +58,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center; /* පින්තූරයේ මැද කොටස පෙන්වන්න */
+    background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.9; /* අවශ්‍ය නම් පින්තූරය ටිකක් අඳුරු කරන්න පුළුවන් */
+    opacity: 0.9;
 }
 
-/* Make title font a bit larger on very big screens */
+.hero-subtitle {
+    letter-spacing: 2px;
+    color: #6c757d;
+}
+
 .hero-title {
     font-size: 3.5rem;
 }
@@ -100,6 +77,20 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 4.5rem;
     }
 }
+
+/* Custom Primary Button */
+.btn-primary-custom {
+    background-color: #ff5b5b; /* මුල් පාට */
+    color: white !important;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* මාරු වෙන එක smooth වෙන්න */
+}
+
+.btn-primary-custom:hover {
+    background-color: #333333; /* Hover කරද්දී එන තද කළු/අළු පාට */
+    color: white !important;
+    transform: translateY(-2px); /* මවුස් එක ගෙනියද්දී බොත්තම පොඩ්ඩක් උඩට එයි */
+}
+
 /* --- Features Strip Styles --- */
 .feature-icon {
     width: 45px;
@@ -110,15 +101,13 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     color: white;
     font-size: 1.1rem;
-    flex-shrink: 0; /* වචන දිග වුණත් රවුම පොඩි වෙන එක නවත්වනවා */
+    flex-shrink: 0;
 }
 
-/* Feature Colors */
 .bg-orange { background-color: #ff7a59; }
 .bg-teal { background-color: #00bfa5; }
 .bg-purple { background-color: #9c27b0; }
 .bg-green { background-color: #8bc34a; }
-
 
 /* --- Products Section Styles --- */
 .product-card {
@@ -126,14 +115,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-card:hover {
-    transform: translateY(-5px); /* මවුස් එක ගෙනියද්දී කාඩ් එක ටිකක් උඩට එයි */
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; /* සෙවනැල්ල ටිකක් තද වෙයි */
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     cursor: pointer;
 }
 
 .product-img {
     height: 250px;
-    object-fit: cover; /* පින්තූර ඇදෙන්නේ නැතුව ලස්සනට කොටුවට පිරෙන්න */
-    padding: 15px; /* පින්තූරය වටේට පොඩි හිස් ඉඩක් (border) තියන්න */
-    background-color: #f8f9fa; /* පින්තූරයට යටින් ලා අළු පාටක් */
+    object-fit: cover;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+/* --- Promo Banner Styles --- */
+.promo-banner .row {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-banner .row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important; /* hover කරද්දී ලොකු සෙවනැල්ලක් එයි */
+}
+
+/* Bullet Points (Check icons) alignment */
+.promo-banner ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem; /* අකුරු ටිකක් ලොකු කළා කියවන්න ලේසි වෙන්න */
+}
+
+.promo-banner ul li i {
+    width: 25px; /* අයිකන් සේරම එකම පළලකට ගන්න (align කරන්න) */
 }
