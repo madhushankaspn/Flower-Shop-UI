@@ -118,3 +118,22 @@ h1, h2, h3, h4, h5, h6 {
 .bg-teal { background-color: #00bfa5; }
 .bg-purple { background-color: #9c27b0; }
 .bg-green { background-color: #8bc34a; }
+
+
+/* --- Products Section Styles --- */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* මවුස් එක ගෙනියද්දී කාඩ් එක ටිකක් උඩට එයි */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; /* සෙවනැල්ල ටිකක් තද වෙයි */
+    cursor: pointer;
+}
+
+.product-img {
+    height: 250px;
+    object-fit: cover; /* පින්තූර ඇදෙන්නේ නැතුව ලස්සනට කොටුවට පිරෙන්න */
+    padding: 15px; /* පින්තූරය වටේට පොඩි හිස් ඉඩක් (border) තියන්න */
+    background-color: #f8f9fa; /* පින්තූරයට යටින් ලා අළු පාටක් */
+}
