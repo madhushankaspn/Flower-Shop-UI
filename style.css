@@ -386,6 +386,23 @@ ul {
     color: #adb5bd;
 }
 
+/* Form එකේ සාමාන්‍ය පෙනුම (යටින් ඉරක් තියෙනවා) */
+.newsletter-form {
+    border-bottom: 1px solid #cccccc;
+    border-radius: 8px; /* රවුම් ගතිය */
+    padding: 8px 15px;
+    transition: all 0.3s ease; /* smooth වෙනස් වෙන්න */
+}
+
+/* Hover කරද්දී සහ Focus කරද්දී පෙනුම */
+.newsletter-form:hover, 
+.newsletter-form:focus-within {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* පැහැදිලි සෙවනැල්ලක් */
+    border-bottom-color: transparent; /* යට ඉර මකනවා */
+    background-color: #ffffff; /* සෙවනැල්ල කැපිලා පේන්න සුදු පසුබිමක් දෙනවා */
+    transform: translateY(-2px); /* පොඩ්ඩක් උඩට එනවා */
+}
+
 /* --- Footer Section --- */
 .footer-section {
     background-color: #222222;
